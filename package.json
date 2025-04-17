@@ -1,0 +1,11 @@
+{
+  "name": "clgolden",
+  "version": "1.0.0",
+  "description": "One-page static website for CLGolden Digital",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christine L Golden",
+  "license": "ISC"
+}

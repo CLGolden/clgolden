@@ -4,16 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preload" href="/fonts/roboto-v30-latin-regular.woff2 " as="font" type="font/woff2" crossorigin>
+
+    <link rel="stylesheet" href="fonts.css">
+    <link rel="stylesheet" href="root.css">
+    <link rel="stylesheet" href="hero.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>CLGolden Digital</title>
 </head>
 
 <body>
     <!-- Usage Notes:
 We made this stitch to overlap the section below it, so if there's a patterned texture or image background on the next section below, it will overlap on top of it. Other Stitches like this would have a white gap between the cards and the next section. In order to make Stitches like this work, we need to add a padding top on the section below it to counteract the overlap. Here's the padding top you need to add to the section below this one and all the breakpoints to add them so this design will work with whatever comes after it:
 
-ON MOBILE (360px): add padding-top: (520/16rem); using LESS, or padding-top: calc(520 / 16 * 1rem); if you're using SCSS, or padding-top: 32.5rem; if you're just using vanilla CSS.
+ON MOBILE (360px): add padding-top: (750/16rem); using LESS, or padding-top: calc(750 / 16 * 1rem); if you're using SCSS, or padding-top: 46.875rem; if you're just using vanilla CSS.
 
-ON TABLET (768px): Reset to padding-top: (280/16rem); using LESS, padding-top: calc(280 / 16 * 1rem) for SCSS or padding-top: 17.5rem; for CSS.
+ON TABLET (768px): Reset to padding-top: (500/16rem); using LESS, padding-top: calc(500 / 16 * 1rem) for SCSS or padding-top: 31.25rem; for CSS.
+
+ON DESKTOP (1024px): Reset to padding-top: (250/16rem); using LESS, padding-top: calc(250 / 16 * 1rem) for SCSS or padding-top: 15.625rem; for CSS.
 
 Doing this will complete the overlapping "breaking the container" look.
 -->
@@ -21,28 +29,27 @@ Doing this will complete the overlapping "breaking the container" look.
     <!-- ============================================ -->
     <!--                    Hero                      -->
     <!-- ============================================ -->
-
-    <section id="hero-1300">
+    <section id="hero-1299">
         <div class="cs-container">
             <div class="cs-content">
-                <span class="cs-topper">Welcome to Invetex</span>
-                <h1 class="cs-title">Expert Accountants and Tax Advisors for Your Business</h1>
+                <span class="cs-topper">CLGolden Digital</span>
+                <h1 class="cs-title">Living in the Present. Coding for the Future.</h1>
                 <p class="cs-text">
-                    Highly qualified tax consultants with many years of experience in the field offer a full range of
-                    services to help you build a financial future.
+                    Digital tech can be a boon
+                    for humanity; food, medicine, weather, community, discovery, even goverance. <span
+                        class="bold">Let's build something
+                        good together.</span>
                 </p>
-                <a href="" class="cs-button-solid">Free Consultation</a>
+                <a href="" class="cs-button-solid">Let's talk!</a>
             </div>
-            <!--To make your own background crops of people use https://www.remove.bg/-->
+
             <div class="cs-picture-wrapper">
+                <!-- flying saucer -->
                 <picture class="cs-picture">
-                    <source media="(max-width: 600px)"
-                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/accountant15.png">
-                    <source media="(min-width: 601px)"
-                        srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/accountant15.png">
-                    <img aria-hidden="true" decoding="async"
-                        src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/People/accountant15.png"
-                        alt="accountant" width="468" height="658">
+                    <source media="(max-width: 600px)" srcset="images/flying-saucer.png">
+                    <source media="(min-width: 601px)" srcset="images/flying-saucer.png">
+                    <img aria-hidden="true" decoding="async" src="images/flying-saucer.png" alt="accountant" width="468"
+                        height="658">
                 </picture>
             </div>
         </div>
@@ -52,7 +59,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     <a href="" class="cs-link">
                         <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/brain.svg"
                             loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
-                        <h3 class="cs-h3">Creative Solutions</h3>
+                        <h2 class="cs-h3">Frontend Web Developer</h2>
                         <p class="cs-item-text">
                             We will go ahead that extra mile to ensure our clients welfare, our working hours convenient
                             to our Client's from contact.
@@ -63,7 +70,7 @@ Doing this will complete the overlapping "breaking the container" look.
                     <a href="" class="cs-link">
                         <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/users.svg"
                             loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
-                        <h3 class="cs-h3">Professional Team</h3>
+                        <h2 class="cs-h3">Small Business Owner</h2>
                         <p class="cs-item-text">
                             We will go ahead that extra mile to ensure our clients welfare, our working hours convenient
                             to our Client's from contact.
@@ -74,7 +81,18 @@ Doing this will complete the overlapping "breaking the container" look.
                     <a href="" class="cs-link">
                         <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
                             loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
-                        <h3 class="cs-h3">Diverse Approach</h3>
+                        <h2 class="cs-h3">Author, Content Creator</h2>
+                        <p class="cs-item-text">
+                            We will go ahead that extra mile to ensure our clients welfare, our working hours convenient
+                            to our Client's from contact.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="" class="cs-link">
+                        <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/Layer.svg"
+                            loading="lazy" decoding="async" alt="icon" width="40" height="40" aria-hidden="true">
+                        <h2 class="cs-h3">Aspiring Data Analyst</h2>
                         <p class="cs-item-text">
                             We will go ahead that extra mile to ensure our clients welfare, our working hours convenient
                             to our Client's from contact.
@@ -83,26 +101,71 @@ Doing this will complete the overlapping "breaking the container" look.
                 </li>
             </ul>
         </div>
-        <!--Floating Arrow-->
-        <!--We wrap it in a picture element wrapper so we can use the wrapper as a box for it to live inside of instead of the section wrapper. This allows us to add overflow:hidden to the wrapper to cut off the graphic at the edge of the screen. If we added overflow:hidden to the section container it would clip the overlapping service cards. So we add this wrapper to allow us to clip only the graphic. -->
-        <picture class="cs-floater-wrapper">
-            <img class="cs-floater" aria-hidden="true" decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-arrow-reversed.svg"
-                alt="graphic" width="956" height="708">
-        </picture>
         <!--Background Image, background image added in CSS at 1600px wide for parallax effect-->
         <picture class="cs-background">
             <!--Mobile Image-->
-            <source media="(max-width: 1023px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/buildings-t-reversed2.jpg">
+            <source media="(max-width: 1023px)" srcset="images/solarpunk-city-mb.jpg">
             <!--Tablet and above Image-->
-            <source media="(min-width: 1024px)"
-                srcset="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/buildings-reversed2.jpg">
-            <img loading="lazy" decoding="async"
-                src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/buildings-reversed2.jpg"
-                alt="buildings" width="1280" height="568">
+            <source media="(min-width: 1024px)" srcset="images/solarpunk-city-bg.jpg">
+            <img loading="lazy" decoding="async" src="images/solarpunk-city-bg.jpg" alt="buildings" width="1280"
+                height="717">
         </picture>
     </section>
+
+    <!-- ============================================ -->
+    <!--                Side By Side                  -->
+    <!-- ============================================ -->
+    <section id="RPsbs-458">
+        <h2 style="text-align: center;">Current Projects</h2>
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Web & Marketing</span>
+                <h3 class="cs-title">Neighborhood Business Solutions <span style="font-size: 80%;">of Yolo County,
+                        CA</span></h3>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Nunc lobortis mattis aliquam faucibus purus in. Diam ut venenatis tellus in
+                    metus vulputate eu. Massa vitae tortor condimentum lacinia quis vel eros donec ac.
+                </p>
+                <a href="https://nbs-yolocounty.com/" target="_blank" class="cs-button-solid">Go to Site</a>
+            </div>
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="images/project-nbsyolo.jpg">
+                <source media="(min-width: 601px)" srcset="images/project-nbsyolo.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="images/project-nbsyolo.jpg" alt="grass"
+                    width="649" height="617">
+            </picture>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--             Side By Side Reverse             -->
+    <!-- ============================================ -->
+
+    <section id="RPsbsr-458">
+        <div class="cs-container">
+            <div class="cs-content">
+                <span class="cs-topper">Web & Marketing</span>
+                <h3 class="cs-title">Women's WebCraft</h3>
+                <p class="cs-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Nunc lobortis mattis aliquam faucibus purus in. Diam ut venenatis tellus in
+                    metus vulputate eu. Massa vitae tortor condimentum lacinia quis vel eros donec ac.
+                </p>
+                <a href="" class="cs-button-solid">Learn More</a>
+            </div>
+            <picture class="cs-picture">
+                <source media="(max-width: 600px)" srcset="images/project-wwc.jpg">
+                <source media="(min-width: 601px)" srcset="images/project-wwc.jpg">
+                <img aria-hidden="true" loading="lazy" decoding="async" src="images/project-wwc.jpg" alt="grass"
+                    width="649" height="617">
+            </picture>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
 
 </body>
 
