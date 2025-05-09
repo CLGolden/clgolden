@@ -19,7 +19,7 @@ body,
 html {
     margin: 0;
     padding: 0;
-    font-family: "Work Sans", Arial, sans-serif;
+    font-family: "Tuffy", Arial, sans-serif;
     font-size: 105%;
     color: var(--bodyTextColor);
 }
@@ -35,7 +35,7 @@ h1,
 h2,
 h3,
 h4 {
-    font-family: "Afacad", Arial, sans-serif;
+    font-family: "Tuffy", Arial, sans-serif;
     font-weight: 700;
     color: var(--headerColor);
     font-size: var(--headerFontSize);
@@ -54,7 +54,7 @@ h4 {
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: inherit;
-    letter-spacing: .1em;
+    letter-spacing: .05em;
     font-weight: 700;
     color: var(--primary);
     margin-bottom: 0.25rem;
