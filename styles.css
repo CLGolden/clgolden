@@ -673,3 +673,52 @@
         margin-top: clamp(0.5rem, 1.2vw, 0.75rem);
     }
 }
+
+/*-- -------------------------- -->
+<---   For Sale Banner     -->
+<--- -------------------------- -*/
+.forSaleBanner {
+    background-color: rgba(227, 41, 49, 80);
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    font-size: 1rem;
+    padding: 12px 24px;
+    margin: 85% auto;
+    rotate: 16deg;
+}
+
+.forSaleBanner a {
+    color: #fff;
+}
+
+.forSaleBanner hr {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+    .forSaleBanner {
+        /* background-color: rgba(217, 86, 32, 60); */
+    }
+}
+
+/* Small Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+    .forSaleBanner {
+        font-size: 1.6rem;
+    }
+
+    .forSaleBanner.b {
+        margin-left: 32%;
+    }
+}
+
+/* Desktop - 1300px */
+@media only screen and (min-width: 81.25rem) {
+    .forSaleBanner.a {
+        margin: 0;
+        margin-right: 30%;
+    }
+}
